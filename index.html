@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"  />
+    <link rel="stylesheet" href="media.css">
+
+</head>
+<body>
+    <section id="heder">
+       <div class="container">
+            <nav class="nav flex">
+                <img src="./Assets/KT.png" alt="profile-logo" class="profile-logo">
+    
+                <ul class="nav-link flex" id="sidemenu">
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#About">About</a>
+                    </li>
+                    <li>
+                        <a href="#Portfolio">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                    <i class="fas fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+                
+            </nav>
+           <div class=" heder-col flex">
+            <div class="heder-text">
+                <h1>Hello, It's Me <br> Kaustubh <span>Tripathi</span></h1>
+                <p>Web Devloper and Data Analyst</p>
+            </div>
+            <div class=" heder-img">
+                <img src="./Assets/Coding.gif" >
+            </div>
+           </div>
+       </div>
+    </section>
+
+    <!-- about  -->
+     <section id="About">
+        <div class="container">
+            <div class="row flex">
+                <div class="about-col1">
+                    <img src="./Assets/Kaustubh Tripathi.jpg" alt="profile-img">
+                </div>
+                <div class="about-col2">
+                    <h2>About Me</h2>
+                    <p>
+                        Hello, I'm Kaustubh Tripathi. I am from Trambakeshwar, Nashik. I am a fresher recent graduate from Sandip Foundation, 
+                        specifically Sandip Institute of Engineering and Management Nashik, with a Bachelor of Engineering (BE) in Electronics and Telecommunications, 
+                        and I am a passionate web developer. I have a strong interest in building responsive websites.
+                        <p>
+                            During my academic journey, I have developed skills in web development, data analysis, and computer networking.
+                            I have completed many projects that enable me to implement my knowledge and imagination, such as Blinkit grocery 
+                            sell analysis, coffee shop sales analysis, and a chatbot for system insights.
+                        </p>
+                       <p>
+                            I'm eager to continue learning, growing, and collaborating on exciting projects. Let's connect and create something great together!
+                       </p>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+     <!-- Portfolio -->
+    <section id="Portfolio">
+        <div class="container">
+            <h2 class="Portfolio-heding">My Work</h2>
+            <div class="work-list flex">
+                <div class="work">
+                    <img src="./Assets/work 1.png">
+                    <div class="layer flex" >
+                        <h3>Blinkit Grocery Analysis</h3>
+                        <p>Blinkit is one of India's leading online grocery delivery services known for its quick delivery times, 
+                           previously called Grofers. This project analyzes Blinkit’s grocery sales data to identify key insights
+                           on sales performance, customer preferences, and inventory distribution.</p>
+                           <a href="https://github.com/KaustubhKT02/Blinkit_Grocery_Analysis"><i class="fa-solid fa-link"></i></a>
+
+                    </div>
+                    
+                </div>
+
+                <div class="work">
+                    <img src="./Assets/work 2.jpeg">
+                    <div class="layer flex">
+                        <h3>Coffee Shop Sales Analysis</h3>
+                        <p>Welcome to the Coffee Shop Sales Analysis project! This Project contains an interactive sales dashboard 
+                        created using Microsoft Excel to analyze and visualize various aspects of a coffee shop's sales data.</p>
+                        <a href="https://github.com/KaustubhKT02/Coffee_shop_sales"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                    
+                </div>
+
+                <div class="work">
+                    <img src="./Assets/work 3.jpg">
+                    <div class="layer flex">
+                        <h3>Yelp Restaurant Success Analysis </h3>
+                    <p>This project analyzes factors influencing restaurant success in various metropolitan areas in the USA and Canada using the Yelp dataset.
+                         Through insights into user engagement, review patterns, and ratings, the project identifies factors that may contribute to the visibility and success of restaurants.</p>
+                         <a href="https://github.com/KaustubhKT02/Yelp-Restaurant-Success-Analysis"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </section>
+    <!-- Contact me -->
+     <section id="contact">
+        <div class="container">
+            <div class="row flex">
+                <div class="contact-left">
+                    <h2>Contact Me</h2>
+                    <p><i class="fa-solid fa-paper-plane"></i> Kaustubhtriapthi36@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 09284916179</p>
+                    <div class="social-icon flex">
+                        <a href="https://wa.me/919284916179" target="_blank">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                        <a href="https://www.instagram.com/Kaustubhkt/?utm_source=qr#" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="https://github.com/KaustubhKT02" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                <a href="./Assets/Resume.pdf" download  class="btn">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input id="Name"  type="text" name="Name" placeholder="Your Name" autocomplete="none" required>
+                        <input id="Email" type="email" name="Email" placeholder="Your Email" autocomplete="none" required>
+                        <textarea id = "Message" name="Message" rows="6" placeholder="Your Message" autocomplete="none"></textarea>
+                        <button type="submit" onclick="sendWhatsapp()">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+     </section>
+     <script src="./script.js"></script>
+</body>
+</html>
