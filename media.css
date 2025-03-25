@@ -1,0 +1,123 @@
+@media  screen and (max-width: 600px) {
+    .heder-text {
+        margin-top: 50%;
+        font-size: 2rem;
+        flex-basis: 100%;
+        text-align: center;
+    }
+    .heder-text h1 {
+        font-size: 5rem;
+    }
+
+
+ .heder-img {
+        display: none;
+    }
+
+    .nav .fas {
+        display: block;
+    }
+
+    .nav-link {
+        background:#ff7513be;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        flex-direction: column;
+        z-index: 2;
+        transition: right 0.5s;
+    } 
+
+    .nav-link a {
+        display: block;
+        margin: 10px;
+    }
+
+    .nav-link .fas {
+        position: absolute;
+        top: 25px;
+        left: 10px;
+        cursor: pointer;
+    }
+/* About */
+#About {
+    margin-top: none;
+}
+
+
+
+.about-col1 {
+    flex-basis: 100%;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.about-col2{
+    flex-basis: 100%;
+}
+
+.about-col2 h2 {
+    font-size: 4rem;
+    font-weight: 700;
+    font-family: Poppins;
+    color: var(--seconary-color);
+}
+
+.about-col2 p {
+    width: 100%;
+    margin-top: 10px;
+    font-size: 1.5rem;
+    text-align: justify;
+    padding: 10px;
+}
+
+/* COntact  */
+.contact-left{
+    flex-basis: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+.social-icon {
+    width: 100%;
+    justify-content: center;
+
+}
+
+.contact-left .btn {
+    width:100%;
+    text-align: center;
+} 
+
+
+.contact-right {
+    flex-basis: 100%;
+}
+
+form {
+    padding-inline:10px ;
+}
+
+button {
+    width: 100%;
+}
+
+}
+
+@media  screen and (max-width: 400px) {
+    #heder {
+        height: 90vh;
+    }
+
+    .heder-text {
+        margin-top: 50%;
+        font-size: 1.5rem;
+    }
+    
+    .heder-text h1 {
+        font-size: 3rem;
+    }
+    
+}
